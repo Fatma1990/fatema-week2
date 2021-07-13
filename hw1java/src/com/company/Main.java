@@ -1,8 +1,32 @@
 package com.company;
 
-public class Main {
+import java.util.Scanner;
 
-    public static void main(String[] args) {
-	// write your code here
+class Main {
+
+    public static class Fibonacci {
+
+        public static void main(String[] args) {
+            int F0=0,F1=1;
+            int number;
+            int result ;
+            Scanner in = new Scanner(System.in);
+            System.out.println("please enter numbers?");
+            number=in.nextInt();
+d4
+            if(number==0)
+                System.out.println(F0);
+            else {
+                System.out.print(F0+", ");
+                System.out.print(F1+", ");
+                for(int i=2;i<=number;i++){
+                    result=F0+F1;
+                    F0=F1;
+                    F1=result;
+                    System.out.print(result+", ");
+
+                }
+            }
+        }
     }
 }
